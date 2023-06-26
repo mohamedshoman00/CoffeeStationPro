@@ -1,0 +1,9 @@
+.community-container .community-h2 {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  text-transform: capitalize;
+  color: #000000;
+}

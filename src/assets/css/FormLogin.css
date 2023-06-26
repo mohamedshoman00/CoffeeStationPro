@@ -1,0 +1,96 @@
+#form-login {
+  background-image: url(../images/Home.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+#form-login .homeLayer {
+  background: linear-gradient(180deg, rgba(33, 78, 138, 0.8) 0%, rgba(244, 81, 30, 0.8) 189.41%);
+  position: relative;
+}
+
+#form-login .form-control {
+  background-color: transparent;
+  color: white;
+}
+
+#form-login .form-control::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1;
+  /* Firefox */
+}
+
+#form-login .form-control:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+}
+
+#form-login .form-control::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
+}
+
+#form-login .form-control:valid {
+  background-color: transparent !important;
+}
+
+#form-login .or {
+  position: relative;
+
+}
+
+
+#form-login .or::after {
+  content: ' ';
+  background-color: white;
+  position: absolute;
+  height: 1%;
+  width: 100px;
+  bottom: 50%;
+  right: 120%
+}
+
+
+#form-login .or::before {
+  content: ' ';
+  background-color: white;
+  position: absolute;
+  height: 1%;
+  width: 100px;
+  bottom: 50%;
+  left: 120%
+}
+
+#form-login .google {
+  color: #FD5B1F;
+}
+
+#form-login .signIn {
+  position: absolute;
+  background: linear-gradient(180deg, #214E8A 0%, #F4511E 207.57%);
+  height: 100vh;
+  border-radius: 65% 65% 0% 0%;
+  z-index: 100;
+  right: 0%;
+  left: 0%;
+  bottom: -85%;
+
+}
+
+#form-login .sign-up {
+  position: relative;
+  z-index: 100;
+}
+
+#form-login .sign-in-main {
+  position: absolute;
+}
+
+#form-login .signUp .col input,
+#form-login .sign-up-btn,
+#form-login .signIn input,
+#form-login .signIn button {
+  height: 50px;
+}

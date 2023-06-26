@@ -1,0 +1,133 @@
+/* Start top-cafe */
+
+.top-cafe {
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  position: relative;
+}
+
+
+
+.top-cafe .main-title {
+  position: relative;
+  padding-right: 30px;
+  /* margin: 0 0 30px 185px; */
+  margin: 0 0px 30px 15px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  text-transform: capitalize;
+}
+
+.top-cafe .main-title::before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  width: 50%;
+  height: 1px;
+  color: #000;
+  background-color: #000;
+}
+
+.top-cafe .main-title .view-all-btn {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: capitalize;
+  color: #000000;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.top-cafe .main-title .view-all-btn:hover {
+  background-color: var(--yellow-color);
+}
+
+.top-cafe .container {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 35px;
+}
+
+.top-cafe .container .content .first {
+  color: #FD5B1F;
+}
+
+.top-cafe .container .content .second {
+  color: #214E8A;
+}
+
+.top-cafe .box {
+  box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+  background-color: white;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform var(--main-transition), box-shadow var(--main-transition);
+}
+
+.top-cafe .box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+}
+
+.top-cafe .box img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.top-cafe .box .content {
+  padding: 20px;
+}
+
+.top-cafe .box .content h3 {
+  margin: 0;
+}
+
+.top-cafe .box .content p {
+  margin: 10px 0 0;
+  line-height: 1.5;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.top-cafe .box .rate .filled {
+  color: #ffc107;
+}
+
+.top-cafe .box .rate span {
+  margin-left: 10px;
+}
+
+.top-cafe .box .info {
+  cursor: pointer;
+  padding: 20px;
+  border-top: 1px solid #e6e6e7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-cafe .box .info a {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.top-cafe .box .info i {
+  color: var(--secondary-color);
+}
+
+.top-cafe .box:hover .info i {
+  animation: moving-arrow 0.6s linear infinite;
+}
+
+
+/* End top-cafe */

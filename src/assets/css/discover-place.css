@@ -1,0 +1,114 @@
+/* Start discover */
+
+.discover {
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  position: relative;
+  background: #fff;
+
+}
+
+.discover .main-title {
+  padding-right: 30px;
+  position: relative;
+  /* margin: 0 0 30px 185px; */
+  margin: 0 0px 30px 15px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  text-transform: capitalize;
+}
+
+.discover .main-title::before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  width: 60%;
+  height: 1px;
+  color: #000;
+  background-color: #000;
+}
+
+.discover .container {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.discover .container .content .first {
+  color: #FD5B1F;
+}
+
+.discover .container .content .second {
+  color: #214E8A;
+}
+
+.discover .box {
+  box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+  background-color: white;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform var(--main-transition), box-shadow var(--main-transition);
+}
+
+.discover .box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+}
+
+.discover .box img {
+  height: 150px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.discover .box .content {
+  padding: 20px;
+}
+
+.discover .box .content h3 {
+  margin: 0;
+  font-size: calc(0.7rem + .6vw);
+}
+
+.discover .box .content p {
+  margin: 10px 0 0;
+  line-height: 1.5;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.discover .box .rate .filled {
+  color: #ffc107;
+}
+
+.discover .box .rate span {
+  margin-left: 10px;
+}
+
+.discover .box .info {
+  cursor: pointer;
+  padding: 20px;
+  border-top: 1px solid #e6e6e7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.discover .box .info a {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.discover .box .info i {
+  color: var(--secondary-color);
+}
+
+.discover .box:hover .info i {
+  animation: moving-arrow 0.6s linear infinite;
+}
+
+/* End discover */

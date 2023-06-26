@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: #FD5B1F;
+  --secondary-color: #214E8A;
+  --yellow-color: #F3B13E;
+  --main-transition: 0.5s;
+  --main-padding-top: 50px;
+  --main-padding-bottom: 50px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+}

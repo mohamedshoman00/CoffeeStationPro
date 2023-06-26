@@ -1,0 +1,53 @@
+#contact .h2Contact {
+    color: #FD5B1F;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+#contact .contact-info {
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+#contact .circle1 {
+    position: absolute;
+    width: 138px;
+    height: 138px;
+    left: 55%;
+    top: 65%;
+    background: rgba(72, 72, 72, 0.5);
+}
+
+#contact .circle2 {
+    position: absolute;
+    width: 270px;
+    height: 270px;
+    left: 65%;
+    top: 65%;
+    background: rgba(72, 72, 72, 0.5);
+}
+
+#contact .iconC {
+    background: rgba(72, 72, 72, 0.5);
+    width: 30px;
+    height: 30px;
+}
+
+#contact .icons {
+    position: absolute;
+    bottom: 5%;
+}
+
+#contact .iconC:hover {
+    background-color: white;
+}
+
+#contact .iconC i {
+    color: white;
+}
+
+#contact .iconC i:hover {
+    color: rgba(72, 72, 72, 0.5);
+}

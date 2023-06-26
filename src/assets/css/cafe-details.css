@@ -1,0 +1,24 @@
+.cafe-details {}
+
+.cafe-details .follow {}
+
+.cafe-details .follow a,
+.cafe-details .follow-para {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #214E8A;
+}
+
+.cafe-details .rate .filled {
+  color: #ffc107;
+}
+
+.cafe-details .rate span {
+  margin-left: 10px;
+}
+
