@@ -22,7 +22,7 @@ function Post() {
         <div className="info">
           <div className="left">
             <img src={user} alt="" />
-            <p>Usama</p>
+            <p>Mahmoud</p>
           </div>
 
           <div className="right">
@@ -89,7 +89,7 @@ function Post() {
         {addComment && <AddComments />}
         <div className="review">
           <h3>
-            Usama
+            Mahmoud
             <button
               onClick={() => setFollowBtn(!followBtn)}
               style={{

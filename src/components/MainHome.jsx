@@ -19,8 +19,7 @@ const MainHome = () => {
         backgroundSize: "cover",
         // backgroundPosition: "center",
         position: "relative",
-      }}
-    >
+      }}>
       <div className="overlay"></div>
       <div className="second-overlay"></div>
       {showNoti && <Notifications />}
@@ -29,8 +28,7 @@ const MainHome = () => {
       <div className="home" style={{ height: "100%" }}>
         <div
           className="side1 d-flex gap-3"
-          style={{ marginLeft: `220px`, marginTop: `-25px` }}
-        >
+          style={{ marginLeft: `220px`, marginTop: `-25px` }}>
           <div className="card1">
             <div>
               <h2>
@@ -63,8 +61,7 @@ const MainHome = () => {
         </div>
         <div
           className="side2 d-flex"
-          style={{ marginLeft: `220px`, marginTop: `-50px` }}
-        >
+          style={{ marginLeft: `220px`, marginTop: `-50px` }}>
           <div className="card3">
             <h3>
               Find The <br /> Best <span>cafe</span> <br /> and
@@ -76,8 +73,7 @@ const MainHome = () => {
             style={{
               backgroundImage: `url(${cardBg})`,
               backgroundSize: "cover",
-            }}
-          >
+            }}>
             <NavLink className="card5-btn">
               <p>frio cafe</p>
               <i className="fa-solid fa-right-long"></i>

@@ -105,7 +105,7 @@ const FormLogin = () => {
     }
   };
   const authAxios = axios.create({
-    baseURL: `https://walkie-v2.000webhostapp.com/api`,
+    baseURL: `https://ENG Cafe-v2.000webhostapp.com/api`,
     headers: {
       "Content-Type": `application/json`,
       Authorization: `Bearer 50|XkEx78NsusS90hSuE0qYEWBl13cncqClogBbs3qE`,
@@ -113,21 +113,48 @@ const FormLogin = () => {
   });
   const getData = async () => {
     // try {
-    await axios
-      .post(`https://walkie-v2.000webhostapp.com/api/login`, {
-        email: `mohamedshoman@eee.com`,
-        password: `11223344`,
-      })
-      .then((res) => console.log(res))
-      .catch((error) => console.log(error));
+    // await axios
+    //   .post(
+    //     `https://ENG Cafe-v2.000webhostapp.com/api/login`,
+    //     {
+    //       email: `mohamedshoman@eee.com`,
+    //       password: `11223344`,
+    //     },
+    //     {
+    //       headers: {
+    //         Accept: `Access-Control-Allow-Origin`,
+    //       },
+    //     }
+    //   )
+    //   .then((res) => console.log(res))
+    //   .catch((error) => console.log(error));
+    ///////////////
     // console.log(res);
     // } catch (error) {
     //   console.log(error);
     // }
+    fetch("https://ENG Cafe-v2.000webhostapp.com/api/login", {
+      method: "POST",
+      body: JSON.stringify({
+        email: `mohamedshoman@eee.com`,
+        password: `11223344`,
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        // Do something with the
+        console.log(data);
+      })
+      .catch((error) => {
+        // Handle any errors
+        console.log(error);
+      });
+    // const res = await axios.get(`https://api.publicapis.org/entries`);
+    // console.log(res);
   };
-  // useEffect(() => {
-  //   getData();
-  // }, []);
+  useEffect(() => {
+    getData();
+  }, []);
   return (
     <>
       <div id="form-login" style={{ overflow: "hidden", position: "relative" }}>
@@ -141,8 +168,7 @@ const FormLogin = () => {
               ${loginForm ? `pb-0` : `pb-3`}
               `}
               style={{ cursor: "pointer" }}
-              onClick={() => setLoginForm(true)}
-            >
+              onClick={() => setLoginForm(true)}>
               Sign Up
             </h2>
             <motion.div
@@ -152,8 +178,7 @@ const FormLogin = () => {
               transition={{
                 duration: 2,
                 delay: 0.1,
-              }}
-            >
+              }}>
               <form onSubmit={SignSubmitHandler}>
                 <div className="row">
                   <div className="col">
@@ -189,8 +214,7 @@ const FormLogin = () => {
                 </div>
                 <button
                   type="submit"
-                  className="btn btn-primary my-3 rounded-pill w-100 p-2 sign-up-btn"
-                >
+                  className="btn btn-primary my-3 rounded-pill w-100 p-2 sign-up-btn">
                   Sign Up
                 </button>
               </form>
@@ -202,8 +226,7 @@ const FormLogin = () => {
               transition={{
                 duration: 2,
                 delay: 0.1,
-              }}
-            >
+              }}>
               <h6 className="text-white fw-light m-0">or</h6>
             </motion.div>
             <motion.div
@@ -213,8 +236,7 @@ const FormLogin = () => {
               transition={{
                 duration: 2,
                 delay: 0.1,
-              }}
-            >
+              }}>
               <p className="text-white d-inline my-3"> Login With </p>
               <i className="fa-brands fa-facebook text-white m-2 fs-5"></i>
               <i className="fa-brands fa-google-plus google fs-5"></i>
@@ -228,12 +250,10 @@ const FormLogin = () => {
           animate={{ y: loginForm ? `0` : `-57%` }}
           transition={{
             duration: 1,
-          }}
-        >
+          }}>
           <div
             className="overlay"
-            style={{ opacity: "0.2", borderRadius: "65% 65% 0% 0%" }}
-          ></div>
+            style={{ opacity: "0.2", borderRadius: "65% 65% 0% 0%" }}></div>
           <div className="container d-flex flex-column justify-content-center align-items-center animation sign-in-main pt-4">
             <h2
               className={`text-white fw-bold mb-3 p-3 col-3 text-center ${
@@ -241,8 +261,7 @@ const FormLogin = () => {
               }
               ${loginForm ? `pb-4` : `pb-0`} `}
               style={{ cursor: "pointer" }}
-              onClick={() => setLoginForm(false)}
-            >
+              onClick={() => setLoginForm(false)}>
               Sign In
             </h2>
             <motion.div
@@ -252,8 +271,7 @@ const FormLogin = () => {
               transition={{
                 duration: 2,
                 delay: 0.1,
-              }}
-            >
+              }}>
               <div className="">
                 <form onSubmit={LoginSubmitHandler}>
                   <input
@@ -270,8 +288,7 @@ const FormLogin = () => {
                   />
                   <button
                     className="btn btn-primary my-3 rounded-pill w-100 p-2"
-                    type="submit"
-                  >
+                    type="submit">
                     Log In
                   </button>
                 </form>
@@ -284,8 +301,7 @@ const FormLogin = () => {
               transition={{
                 duration: 2,
                 delay: 0.1,
-              }}
-            >
+              }}>
               <h6 className="text-white fw-light">or</h6>
             </motion.div>
             <motion.div
@@ -295,8 +311,7 @@ const FormLogin = () => {
               transition={{
                 duration: 2,
                 delay: 0.1,
-              }}
-            >
+              }}>
               <p className="text-white d-inline my-3"> Login With </p>
               <i className="fa-brands fa-facebook text-white m-2 fs-5"></i>
               <i className="fa-brands fa-google-plus google fs-5"></i>

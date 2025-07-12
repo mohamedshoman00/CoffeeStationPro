@@ -6,7 +6,7 @@ const Review = () => {
       <div className="container">
         <img src={user} alt="" />
         <div className="text">
-          <h3>Memo elgamed</h3>
+          <h3>Mahmoud</h3>
           <p>
             The Social Grind is a cafe that aims to provide a warm and welcoming
             environment for people to socialize, work, and relax. The cafe

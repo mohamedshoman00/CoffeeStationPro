@@ -36,8 +36,7 @@ const Reels1 = () => {
     <>
       <Container
         fluid
-        className="p-0 w-100 position-relative d-flex justify-content-center align-items-center reel-cont"
-      >
+        className="p-0 w-100 position-relative d-flex justify-content-center align-items-center reel-cont">
         <Sidebar />
         <Container
           fluid
@@ -47,8 +46,7 @@ const Reels1 = () => {
             marginTop: "10px",
             // maxHeight: "90vh",
             // overflow: "hidden",
-          }}
-        >
+          }}>
           {/* <Card className="m-0 p-0 position-relative w-100">
             <Card.Header
               className="w-100 px-5 py-4 position-absolute card-header"
@@ -95,7 +93,7 @@ const Reels1 = () => {
                       marginRight: "15px",
                     }}
                   />
-                  Usama
+                  Mahmoud
                   <button
                     onClick={() => setFollowBtn(!followBtn)}
                     style={{

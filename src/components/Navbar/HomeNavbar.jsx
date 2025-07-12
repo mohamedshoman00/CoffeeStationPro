@@ -18,16 +18,14 @@ const HomeNavbar = () => {
             : // : loc.pathname === `/sign-up`
               // ? `linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.901042) 0.06%, rgba(0, 0, 0, 0.305071) 525.4%, rgba(0, 0, 0, 0) 557.33%)`
               `linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.901042) 0.06%, rgba(0, 0, 0, 0.305071) 525.4%, rgba(0, 0, 0, 0) 557.33%)`,
-      }}
-    >
+      }}>
       {/* {loc.pathname === `/sign-up` && <div className="overlay"></div>} */}
       <Container
         fluid
         className="p-0 home-container align-items-center"
         style={{
           margin: loc.pathname === `/sign-up` ? "0 12vw" : "0 7vw 0 12vw",
-        }}
-      >
+        }}>
         <div className="nav-1">
           <NavLink to="/home">Home</NavLink>
           <NavLink to="/reels">Reels</NavLink>
@@ -35,7 +33,7 @@ const HomeNavbar = () => {
         </div>
         <div className="head">
           <h1>
-            wa<span>l</span>k<span>i</span>e
+            <span>E</span>N<span>G</span> Cafe
           </h1>
         </div>
         <div className="nav-2">
@@ -51,7 +49,7 @@ const HomeNavbar = () => {
               <img src={userImg} alt="" />
               <div className="text">
                 <p>Welcome,</p>
-                <h6>Memo Elgamed</h6>
+                <h6>Mahmoud</h6>
               </div>
               <i className="fa-solid fa-angle-down"></i>
             </div>
@@ -60,8 +58,9 @@ const HomeNavbar = () => {
 
         <div
           className="foot"
-          style={{ width: loc.pathname === `/sign-up` ? "85.5%" : "67.5%" }}
-        ></div>
+          style={{
+            width: loc.pathname === `/sign-up` ? "85.5%" : "67.5%",
+          }}></div>
       </Container>
     </Navbar>
   );

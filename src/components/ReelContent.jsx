@@ -35,8 +35,7 @@ const ReelContent = () => {
       <Card className="mt-5 p-0 position-relative w-100">
         <Card.Header
           className="w-100 px-5 py-4 position-absolute card-header"
-          style={{ height: "50px", background: "none" }}
-        >
+          style={{ height: "50px", background: "none" }}>
           <ul className="d-flex justify-content-center align-items-center w-100 gap-5">
             <li>Nearby</li>
             <li>Following</li>
@@ -45,8 +44,7 @@ const ReelContent = () => {
         </Card.Header>
         <Card.Body
           className="w-100 p-0 d-flex justify-content-center align-items-center"
-          style={{ height: "90vh" }}
-        >
+          style={{ height: "90vh" }}>
           <video
             onClick={onVideoClick}
             ref={vidRef}
@@ -65,8 +63,7 @@ const ReelContent = () => {
             background: "none",
             bottom: "50px",
             border: "none",
-          }}
-        >
+          }}>
           <div className="review">
             <h3>
               <img
@@ -78,13 +75,12 @@ const ReelContent = () => {
                   marginRight: "15px",
                 }}
               />
-              Usama
+              Mahmoud
               <button
                 onClick={() => setFollowBtn(!followBtn)}
                 style={{
                   backgroundColor: followBtn ? `#FD5B1F` : `inherit`,
-                }}
-              >
+                }}>
                 {followBtn ? `Following` : `Follow`}
               </button>
             </h3>
@@ -105,12 +101,10 @@ const ReelContent = () => {
             className="s1"
             onClick={() => {
               setClicked(!clicked);
-            }}
-          >
+            }}>
             <i
               className={clicked ? `fa-solid fa-heart` : `fa-regular fa-heart`}
-              style={{ color: clicked ? `#FD5B1F` : `#214E8A` }}
-            ></i>
+              style={{ color: clicked ? `#FD5B1F` : `#214E8A` }}></i>
             <p>10</p>
           </div>
           <div className="s1">
@@ -121,22 +115,19 @@ const ReelContent = () => {
             className="fa-regular fa-share-from-square"
             style={{
               marginTop: "20px",
-            }}
-          ></i>
+            }}></i>
           <i
             className="fa-regular fa-bookmark"
             style={{
               marginTop: "40px",
-            }}
-          ></i>
+            }}></i>
           <i
             className="fa-solid fa-ellipsis-vertical"
             style={{
               marginTop: "20px",
               marginLeft: "7px",
               fontSize: "35px",
-            }}
-          ></i>
+            }}></i>
         </div>
       </Card>
     </>
