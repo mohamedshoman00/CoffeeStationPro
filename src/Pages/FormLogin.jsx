@@ -105,7 +105,7 @@ const FormLogin = () => {
     }
   };
   const authAxios = axios.create({
-    baseURL: `https://Coffee Station-v2.000webhostapp.com/api`,
+    baseURL: `https://GoLocal-v2.000webhostapp.com/api`,
     headers: {
       "Content-Type": `application/json`,
       Authorization: `Bearer 50|XkEx78NsusS90hSuE0qYEWBl13cncqClogBbs3qE`,
@@ -115,7 +115,7 @@ const FormLogin = () => {
     // try {
     // await axios
     //   .post(
-    //     `https://Coffee Station-v2.000webhostapp.com/api/login`,
+    //     `https://GoLocal-v2.000webhostapp.com/api/login`,
     //     {
     //       email: `mohamedshoman@eee.com`,
     //       password: `11223344`,
@@ -133,7 +133,7 @@ const FormLogin = () => {
     // } catch (error) {
     //   console.log(error);
     // }
-    fetch("https://Coffee Station-v2.000webhostapp.com/api/login", {
+    fetch("https://GoLocal-v2.000webhostapp.com/api/login", {
       method: "POST",
       body: JSON.stringify({
         email: `mohamedshoman@eee.com`,
