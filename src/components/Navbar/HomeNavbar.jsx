@@ -33,7 +33,7 @@ const HomeNavbar = () => {
         </div>
         <div className="head">
           <h1>
-            <span>E</span>N<span>G</span> Cafe
+            <span>Co</span>ff<span>ee</span>
           </h1>
         </div>
         <div className="nav-2">
