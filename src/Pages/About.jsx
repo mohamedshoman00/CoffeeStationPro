@@ -84,23 +84,23 @@ export default function About() {
           </div>
           <div className="col">
             <img src={image1} className="teamPic" />
-            <h5 className="d-inline-block">Mahmoud ali</h5> <br />
+            <h5 className="d-inline-block"> Mahmoud ali</h5> <br />
             <img src={image2} className="teamPic my-4" />
-            <h5 className="d-inline-block my-4">Mohammed mosaad </h5> <br />
+            <h5 className="d-inline-block my-4"> Mahmoud ali </h5> <br />
             <img src={image3} className="teamPic" />
-            <h5 className="d-inline-block">Khaled ibrehim</h5> <br />
+            <h5 className="d-inline-block"> Mahmoud ali</h5> <br />
           </div>
           <div className="col">
             <img src={image1} className="teamPic" />
-            <h5 className="d-inline-block">Moustafa Mhamoud </h5> <br />
+            <h5 className="d-inline-block"> Mahmoud ali </h5> <br />
             <img src={image2} className="teamPic my-4" />
-            <h5 className="d-inline-block my-4">Ahmed selim ali</h5> <br />
+            <h5 className="d-inline-block my-4"> Mahmoud ali</h5> <br />
             <img src={image3} className="teamPic" />
-            <h5 className="d-inline-block">Islam Mohammed</h5> <br />
+            <h5 className="d-inline-block"> Mahmoud ali</h5> <br />
           </div>
           <div className="col">
             <img src={image4} className="teamPic" />
-            <h5 className="d-inline-block">Nada Maged</h5> <br />
+            <h5 className="d-inline-block"> Amira Mahmoud</h5> <br />
           </div>
         </div>
       </div>
