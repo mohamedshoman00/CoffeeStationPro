@@ -9,8 +9,8 @@ export default function Contact() {
           Any question or remarks? Just write us a message!
         </p>
         <br /> <br />
-        <div className="shadow row px-5 g-5">
-          <div className="col-5 bg-black p-5 rounded contact-info">
+        <div className="shadow row px-5 g-5 flex flex-col md:flex-row">
+          <div className="w-full md:w-[40%] bg-black p-5 rounded contact-info h-[350px] md:h-[600px]">
             <div className="header">
               <h3 className=" text-white">Contact information</h3>
               <p className="text-white fw-light">
@@ -42,7 +42,7 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className="col-5 p-5">
+          <div className="w-full md:w-[40%] p-5">
             <div className="row">
               <div className="col-6">
                 <label for="Fname">First Name</label>

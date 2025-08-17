@@ -9,10 +9,10 @@ const Events = ({ data }) => {
   const location = useLocation();
   return (
     <div className="events col-10 col-lg-10" id="events">
-      <h2 className="main-title d-flex justify-content-between col-12 col-lg-12">
+      <h2 className="main-title  gap-8 d-flex justify-content-between items-center col-12 col-lg-12 text-2xl md:text-4xl">
         events will coming soon
         {location.pathname === `/home` ? (
-          <NavLink to="/all-events" className="view-all-btn">
+          <NavLink to="/all-events" className="view-all-btn w-40 h-16">
             View All
           </NavLink>
         ) : null}

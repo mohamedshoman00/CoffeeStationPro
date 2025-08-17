@@ -71,7 +71,7 @@
   position: absolute;
   background: linear-gradient(180deg, #214E8A 0%, #F4511E 207.57%);
   height: 100vh;
-  border-radius: 65% 65% 0% 0%;
+  border-radius: 0% 0% 0% 0%;
   z-index: 100;
   right: 0%;
   left: 0%;

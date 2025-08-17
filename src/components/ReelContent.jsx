@@ -32,10 +32,10 @@ const ReelContent = () => {
 
   return (
     <>
-      <Card className="mt-5 p-0 position-relative w-100">
+      <Card className="mt-5 relative p-0 w-100">
         <Card.Header
-          className="w-100 px-5 py-4 position-absolute card-header"
-          style={{ height: "50px", background: "none" }}>
+          className="w-100 px-5 py-4 position-absolute card-header top-[7.5%] md:top-0 md:bg-transparent"
+          style={{ height: "50px", }}>
           <ul className="d-flex justify-content-center align-items-center w-100 gap-5">
             <li>Nearby</li>
             <li>Following</li>
@@ -51,21 +51,23 @@ const ReelContent = () => {
             src={url}
             loop
             style={{
+              
               width: "100%",
               height: "100%",
             }}
           />
         </Card.Body>
         <Card.Footer
-          className="w-100 px-5 py-4 position-absolute card-footer d-flex justify-content-center align-items-center"
+          className="w-100 px-5 py-2 ps-2 position-absolute card-footer d-flex justify-content-center align-items-center md:bottom-0 md:bg-transparent"
           style={{
-            height: "50px",
-            background: "none",
-            bottom: "50px",
+            // height: "50px",
+            
+            background: "rgba(0, 0, 0, 0.4)",
+            bottom: "7.5%",
             border: "none",
           }}>
-          <div className="review">
-            <h3>
+          <div className="review p-0 md:px-3 md:w-[60%] lg:w-[38%]">
+            <h3 className="mb-3 flex justify-start items-center" >
               <img
                 src={user}
                 alt=""
@@ -73,6 +75,7 @@ const ReelContent = () => {
                   width: "58px",
                   height: "58px",
                   marginRight: "15px",
+                  marginBottom:'10px'
                 }}
               />
               Mahmoud
@@ -84,7 +87,7 @@ const ReelContent = () => {
                 {followBtn ? `Following` : `Follow`}
               </button>
             </h3>
-            <p>
+            <p className="text-justify w-full">
               The Social Grind is a cafe that aims to provide a warm and
               welcoming environment for people to socialize, work, and relax.
               {seeMore &&
@@ -96,7 +99,7 @@ const ReelContent = () => {
             </p>
           </div>
         </Card.Footer>
-        <div className="video-side">
+        <div className="video-side md:right-[22%]">
           <div
             className="s1"
             onClick={() => {

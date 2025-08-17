@@ -6,11 +6,11 @@ const Reels = () => {
   return (
     <>
       <Container
-        fluid
-        className="col-5 video-container1"
+        
+        className="w-full container"
         style={{
-          paddingLeft: "87px",
-          marginTop: "10px",
+          // paddingLeft: "87px",
+          // marginTop: "10px",
           // maxHeight: "90vh",
           // overflow: "hidden",
         }}

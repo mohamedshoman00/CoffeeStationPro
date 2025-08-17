@@ -8,32 +8,32 @@ const Profile = () => {
   return (
     <div>
       <div className="profile">
-        <div className="container">
-          <div className="photo">
-            <img src={user} alt="" />
+        <div className="container flex flex-col items-start justify-between md:flex-row md:justify-start gap-4">
+          <div className="photo mb-6">
+            <img src={user} alt="" className="w-[200px] h-[200px] md:w-[200px] md:h-[200px]" />
             <div className="button">
-              <button>Edit profile</button>
+              <button className="w-[200px] md:w-[200px] text-xl">Edit profile</button>
             </div>
           </div>
-          <div className="text">
+          <div className="text flex flex-col gap-5">
             <h3>
-              mahmoud ali <i className="fa-solid fa-circle-check"></i>
+              mahmoud <i className="fa-solid fa-circle-check"></i>
             </h3>
-            <div className="data">
+            <div className="data flex ">
               <i className="fa-solid fa-calendar"></i>
-              <p>april 2020</p>
+              <p className="m-0">april 2020</p>
             </div>
             <div className="data">
               <i className="fa-solid fa-location-dot"></i>
-              <p> ismalia </p>
+              <p className="m-0"> Ismalia </p>
             </div>
             <div className="data">
               <i className="fa-solid fa-envelope"></i>
-              <p> mahmoudxali74@gmail.com </p>
+              <p className="m-0"> mahmoudx456@gmail.com </p>
             </div>
             <div className="data">
               <i className="fa-solid fa-phone"></i>
-              <p> 01141578409 </p>
+              <p className="m-0"> 01141578409 </p>
             </div>
           </div>
         </div>
@@ -57,7 +57,7 @@ const Profile = () => {
           </div>
         </div>
       </div>
-      <div className="mind">
+      <div className="mind hidden md:flex">
         <div className="container">
           <img src={user} alt="" />
           <input

@@ -36,10 +36,10 @@ const Community = () => {
       fluid
       className="m-0 p-0 community-container d-flex justify-content-center align-items-center flex-column"
     >
-      <h2 className="community-h2 mt-5 ms-3 col-10">
-        what are you thinking about <br /> mahmoud?
+      <h2 className="community-h2 mt-5 ms-3 col-10 text-3xl text-justify mb-6">
+        what are you thinking about mahmoud?
       </h2>
-      <div className="mind col-10 mt-5">
+      <div className="mind col-10 mt-5 hidden md:flex mb-6">
         <div className="container">
           <img src={user} alt="" />
           <input
@@ -63,7 +63,7 @@ const Community = () => {
           </div>
         </div>
       </div>
-      <div className="mt-5 pt-3 mb-4 w-100" style={{ background: "#fff" }}>
+      <div className="w-full flex justify-center items-center flex-col" style={{ background: "#fff" }}>
         <Post />
       </div>
       <Ads />

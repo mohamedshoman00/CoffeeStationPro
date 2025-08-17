@@ -14,18 +14,18 @@ export default function WebFooter() {
         <div className="overlay" style={{ opacity: "0.6", zIndex: `-1` }}></div>
         <div className="layer bg-black bg-opacity-75">
           <div className="container p-5">
-            <div className="row">
-              <div className="col-3">
+            <div className="row flex flex-col md:flex-row">
+              <div className="w-full md:w-[25%] mb-4">
                 <h2 className="text-white">
-                  Wa<span className="text-danger">l</span>k
-                  <span className="text-danger">i</span>e
+                  <span className="text-danger">O</span>ut
+                  <span className="text-danger">l</span>y
                 </h2>
                 <p className="text-white p-2">
                   visita.com's brand is ranked #588 in the list of Global Top
                   1000 Brands, as rated by customers of visita.com
                 </p>
               </div>
-              <div className="col-3 ps-4">
+              <div className="w-full md:w-[25%] ps-4">
                 <h3 className="fw-bolder text-white">explore</h3>
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
                   <li className="nav-item mx-1 ">
@@ -58,16 +58,24 @@ export default function WebFooter() {
                 </ul>
               </div>
 
-              <div className="col-3 text-white" style={{ marginTop: "45px" }}>
-                <p> Help </p>
+              <div className="w-full md:w-[25%] text-white mt-4 mb-4 md:m-0">
+                <p className="mb-2"> Help </p>
                 <p> Terms and Conditions </p>
                 <p> privacy policy </p>
               </div>
 
-              <div className="col-3">
+              <div className="w-full md:w-[25%] mt-4 md:m-0">
                 <h4 className="text-white"> Follow Us</h4>
 
-                <div className="icon d-flex gap-3 mt-4">
+                <div className="icon d-flex gap-3 mt-4  items-center">
+                        <i
+                    className="fa-brands fa-facebook-f fa-2"
+                    style={{
+                      color: `#FD5B1F`,
+                      fontSize: `23px`,
+                      cursor: `pointer`,
+                    }}
+                  ></i>
                   <i
                     className="fa-brands fa-instagram fa-2"
                     style={{
@@ -86,14 +94,6 @@ export default function WebFooter() {
                   ></i>
                   <i
                     className="fa-brands fa-twitter fa-2"
-                    style={{
-                      color: `#FD5B1F`,
-                      fontSize: `23px`,
-                      cursor: `pointer`,
-                    }}
-                  ></i>
-                  <i
-                    className="fa-brands fa-facebook-f fa-2"
                     style={{
                       color: `#FD5B1F`,
                       fontSize: `23px`,

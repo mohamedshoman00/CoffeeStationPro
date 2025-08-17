@@ -8,16 +8,16 @@ import image4 from "../assets/images/four.webp";
 
 export default function About() {
   return (
-    <section className=" page-section-about " id="About">
+    <section className=" page-section-about" id="About">
       <div className="container  py-5">
-        <div className="row py-5">
+        <div className="row py-5 flex flex-col md:flex-row">
           <div className="col">
-            <h2>
+            <h2 className="mb-6 text-3xl">
               "Discover the Rich Culture and Vibrant Communities of
               <span className="aboutSpan"> Egypt with Us</span>"
             </h2>
           </div>
-          <div className="col text-muted">
+          <div className="col text-muted mb-2">
             Welcome to our website, where we are dedicated to promoting local
             businesses and tourism in Egypt. Egypt is a land of ancient history
             and modern charm, with a rich culture and vibrant communities
@@ -29,16 +29,16 @@ export default function About() {
             of discovery and adventure in Egypt!
           </div>
         </div>
-        <div className="aboutImg mb-5">
+        <div className="aboutImg mb-8">
           <img src={image} className="w-100 mb-5" />
         </div>
-        <div className="shadow row g-5 px-5 my-5">
+        <div className="shadow row g-5 px-5 my-5 flex flex-col md:flex-row">
           <div className="col">
             <div className="aboutAfter">
               <h2 className="fw-bolder h2About">Our Story</h2>
             </div>
           </div>
-          <div className="col">
+          <div className="col mb-6">
             <p>
               In our story section, we share our passion for Egypt and our
               desire to showcase the beauty of its local businesses and tourism.
@@ -55,7 +55,7 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div className="shadow row g-5 px-5 my-5">
+        <div className="shadow row g-5 px-5 my-5 flex flex-col md:flex-row">
           <div className="col">
             <div className="aboutAfter">
               <h2 className="fw-bolder h2About">Our value</h2>
@@ -76,7 +76,7 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div className="shadow row g-5 p-5 my-5">
+        {/* <div className="shadow row g-5 p-5 my-5">
           <div className="col">
             <div className="aboutAfter">
               <h2 className="fw-bolder h2About">Our Team</h2>
@@ -102,7 +102,7 @@ export default function About() {
             <img src={image4} className="teamPic" />
             <h5 className="d-inline-block"> Amira Mahmoud</h5> <br />
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

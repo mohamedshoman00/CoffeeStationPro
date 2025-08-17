@@ -23,6 +23,12 @@
   bottom: -10px;
   left: 7%;
   border: 1px solid #fff;
+}.navbar .home-container .foot1 {
+  position: absolute;
+  width: 100%;
+  bottom: -10px;
+  left: 7%;
+  border: 1px solid #fff;
 }
 
 .navbar .home-container .nav-1 {
@@ -152,4 +158,31 @@
   .navbar .home-container {
     margin: 0 7vw 0 7vw ;
   }
+}
+.toggled-menu {
+  z-index:100;
+  list-style: none;
+  left:0;
+  padding: 0;
+  margin: 0;
+  margin-top:30px;
+  background: #041028; 
+  /* background:lon */
+  border-radius: 8px;
+  overflow: hidden;
+}
+.toggled-menu li {  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.toggled-menu li:last-child {  border-bottom: 1px solid rgba(255, 255, 255, 0.1);}
+.toggled-menu li a {
+  display: block;
+  padding: 12px 18px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  transition: background 0.3s, color 0.3s;
+}
+.toggled-menu li a:hover {
+   background: #f04d23; /* orange highlight */
+  color: #fff;
 }

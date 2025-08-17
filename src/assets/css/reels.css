@@ -17,6 +17,7 @@
 .card-header {
   border: none;
   z-index: 10;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .card-footer .review {
@@ -36,10 +37,10 @@
   color: #fff;
   background-color: inherit;
   font-size: 18px;
-  padding: 0 20px;
+  padding: 5px 20px 0px;
   border-radius: 20px;
   /* width: 100px; */
-  height: 40px;
+  height: 30px;
   margin-left: 20px;
   transition: 5s padding ease-in-out;
 }
@@ -63,7 +64,7 @@
   right: 15px;
   display: flex;
   flex-direction: column;
-  bottom: 130px;
+  bottom: 200px;
   height: 50%;
   color: var(--secondary-color);
 }

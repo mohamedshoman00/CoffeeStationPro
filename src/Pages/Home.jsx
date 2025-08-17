@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import HomeNavbar from "../components/Navbar/HomeNavbar";
 import { Container } from "react-bootstrap";
 import HomeBackground from "../assets/images/image13.png";
@@ -24,11 +24,33 @@ import DiscoverPlace from "../components/DiscoverPlace";
 import coffie from "../assets/images/Rectangle 4910.png";
 import Ads from "../components/Ads";
 import MainHome from "../components/MainHome";
+import { FaArrowUp } from "react-icons/fa";
 const Home = () => {
+    const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const toggleVisibility = () => {
+      if (window.scrollY > 300) {
+        setVisible(true);
+      } else {
+        setVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", toggleVisibility);
+    return () => window.removeEventListener("scroll", toggleVisibility);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   const DiscoverData1 = [
     {
       id: 1,
-      placeFirstName: "Ismailia",
+      placeFirstName: "Ismalia",
       placeLastName: "Museum",
       description: ` Tolip El Forsan Hotel fitness olip El Forsan Hotel fitness olip El Forsan Hotel fitnessolip El Forsan Hotel fitness El Forsan Hotel fitness..`,
       placeImage: museum,
@@ -53,7 +75,7 @@ const Home = () => {
     {
       id: 4,
       placeFirstName: "Mercure",
-      placeLastName: "Ismailia",
+      placeLastName: "Ismalia",
       description: ` Tolip El Forsan Hotel fitness olip El Forsan Hotel fitness olip El Forsan Hotel fitnessolip El Forsan Hotel fitness El Forsan Hotel fitness..`,
       placeImage: mercure,
       pageInfo: true,
@@ -70,7 +92,7 @@ const Home = () => {
   const DiscoverData2 = [
     {
       id: 1,
-      placeFirstName: "Ismailia",
+      placeFirstName: "Ismalia",
       placeLastName: "Museum",
       placeImage: museum,
       placeCount: "500 cafe",
@@ -92,7 +114,7 @@ const Home = () => {
     {
       id: 4,
       placeFirstName: "Mercure",
-      placeLastName: "Ismailia",
+      placeLastName: "Ismalia",
       placeImage: mercure,
       placeCount: "500 cafe",
     },
@@ -169,16 +191,27 @@ const Home = () => {
         fluid
         className="p-0 w-100 d-flex justify-content-center flex-column align-items-center"
       >
+           <div>
+      {visible && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-6 right-6 p-3 rounded-full bg-[--main-color] text-white shadow-lg hover:bg-[--main-color] transition-all"
+          style={{zIndex:1000}}
+        >
+          <FaArrowUp size={25} />
+        </button>
+      )}
+    </div>
         {/* Start Home Page */}
         <MainHome />
         {/* End Home Page */}
         {/* start welcome card */}
-        <div className="card col-9 col-lg-9">
-          <div className="container">
-            <h1>
-              Welcome To <span>Ismailia</span> Mahmoud
+        <div className="card col-10 col-lg-9">
+          <div className="container text-justify md:text-center ">
+            <h1 className="md:text-4xl">
+              Welcome To <span>Ismalia</span> Mahmoud
             </h1>
-            <p>
+            <p className="mt-2 text-justify md:text-center">
               <span>Welcome </span> to our beautiful city! We're excited to have
               you here. Explore our local attractions, taste <br /> our
               delicious cuisine, and immerse yourself in our unique culture.
@@ -200,21 +233,21 @@ const Home = () => {
         {/* End discover */}
         {/* start icon */}
         <div className="icons col-9 col-lg-9">
-          <div className="container">
-            <div className="icon">
-              <i className="fa-solid fa-magnifying-glass"></i>
+          <div className="container flex flex-column md:flex-row">
+            <div className="w-full   md:w-[25%] md:px-0 icon mb-3 md:mb-0">
+              <i className="text-3xl fa-solid fa-magnifying-glass"></i>
               <h4>Search</h4>
               <p>Let us know where you'd like to go.</p>
             </div>
-            <div className="icon">
-              <i className="fa-regular fa-hand-pointer"></i>
+            <div className="icon w-full   md:w-[25%] md:px-0 mb-3 md:mb-0">
+              <i className="text-3xl fa-regular fa-hand-pointer"></i>
               <h4>Choose</h4>
               <p>
                 We'll show you options, choose <br /> the right one for you.
               </p>
             </div>
-            <div className="icon">
-              <i className="fa-solid fa-check"></i>
+            <div className="icon w-full   md:w-[25%] md:px-0 mb-3 md:mb-0">
+              <i className="text-3xl fa-solid fa-check"></i>
               <h4>Go</h4>
               <p>Let’s go and explore more places</p>
             </div>
@@ -235,12 +268,12 @@ const Home = () => {
         <Events data={EventData} />
         {/* ُEnd Event */}
         {/* start world */}
-        <div className="container col-9 col-lg-9">
+        <div className="container w-full max-w-screen-lg">
           <h1 className="main-title">
             Global coverage in over 200 cafe, resturants and other places in
-            ismalia
+            Ismalia
           </h1>
-          <div className="world">
+          <div className="w-full world">
             <img src={world} alt="" />
           </div>
         </div>

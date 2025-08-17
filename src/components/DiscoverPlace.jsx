@@ -9,8 +9,8 @@ import { NavLink } from "react-router-dom";
 const DiscoverPlace = ({ data }) => {
   return (
     <div className="discover col-10 col-lg-10" id="discover">
-      <h2 className="main-title col-12 col-lg-12">
-        Discover places in ismalia city
+      <h2 className="text-4xl main-title col-12 col-lg-12 md:text-4xl">
+        Discover places in Ismalia city
       </h2>
       <div className="container">
         {data.map((ele, i) => (
@@ -28,7 +28,7 @@ const DiscoverPlace = ({ data }) => {
             </div>
             {ele.pageInfo && (
               <div className="info">
-                <NavLink to="#">Go to Page</NavLink>
+                <NavLink to="">Go to Page</NavLink>
                 <i className="fas fa-long-arrow-alt-right"></i>
               </div>
             )}
@@ -84,7 +84,7 @@ export default DiscoverPlace;
 //   <div className="content">
 //     <h3>
 //       <span className="first">Mercure</span>{" "}
-//       <span className="second"> Ismailia</span>
+//       <span className="second"> Ismalia</span>
 //     </h3>
 //     <p>
 //       Tolip El Forsan Hotel fitness olip El Forsan Hotel fitness olip El

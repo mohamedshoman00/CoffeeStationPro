@@ -11,18 +11,18 @@ const Temp = () => {
   };
   return (
     <>
-      <Container fluid className="p-0 m-0 w-100 mt-3">
+      <Container fluid className="p-0 m-0 mt-3 w-100">
         <div
-          className="temp d-flex justify-content-between"
+          className="w-full temp d-flex justify-content-between"
           style={{
             backgroundColor: "#fff",
             boxShadow: "0px 4px 87px rgba(0, 0, 0, 0.15)",
             borderRadius: "10px",
           }}
         >
-          <div className="d-flex h-100 pt-4 ps-3 align-items-center">
-            <div className="img h-100 text-center position-relative">
-              <img
+          <div className="p-1 md:pt-4 d-flex h-100 ps-3 align-items-center">
+            <div className="text-center img h-100 position-relative">
+              <img className="w-9 h-9 md:w-11 md:h-11"
                 src={person}
                 alt="person"
                 style={{
@@ -41,7 +41,7 @@ const Temp = () => {
                   fontSize: "22px",
                   color: "#F44336",
                 }}
-                className="fa-brands fa-gratipay"
+                className="text-lg fa-brands md:text-[22px] fa-gratipay left-6 md:left-8"
               ></i>
             </div>
             <div
@@ -49,7 +49,7 @@ const Temp = () => {
               style={{ height: "50px" }}
             >
               <h3
-                className="mb-2"
+                className="mb-2 text-sm md:text-lg md:ml-2"
                 style={{
                   color: "#214E8A",
                   fontWeight: "bold",
@@ -64,9 +64,9 @@ const Temp = () => {
               </p> */}
             </div>
           </div>
-          <div className="follow d-flex flex-column align-items-center justify-content-center p-4">
+    <div className="hidden p-4 follow d-flex flex-column align-items-center justify-content-center md:flex">
             <button
-              className="cafe-det-btn w-100 m-0"
+              className="m-0 cafe-det-btn w-100"
               onClick={() => setFollowBtn(!followBtn)}
               style={{
                 backgroundColor: followBtn ? `#FD5B1F` : `#fff`,
@@ -75,8 +75,8 @@ const Temp = () => {
             >
               {followBtn ? `Following` : `Follow`}
             </button>
-            {/* <i className="fa-regular fa-heart text-center mt-2"></i>
-            <p className="text-center m-0">5</p> */}
+            {/* <i className="mt-2 text-center fa-regular fa-heart"></i>
+            <p className="m-0 text-center">5</p> */}
           </div>
         </div>
       </Container>

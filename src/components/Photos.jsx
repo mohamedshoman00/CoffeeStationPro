@@ -24,7 +24,7 @@ const Photos = () => {
             </div>
             <div className="data">
               <i className="fa-solid fa-location-dot"></i>
-              <p> ismalia </p>
+              <p> Ismalia </p>
             </div>
             <div className="data">
               <i className="fa-solid fa-envelope"></i>

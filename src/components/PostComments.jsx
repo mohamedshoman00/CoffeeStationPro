@@ -7,7 +7,7 @@ const PostComments = () => {
     <>
       <Container
         fluid
-        className="m-0 p-3 col-6 mb-2"
+        className="p-3 m-0 mb-2 col-7"
         style={{
           position: "absolute",
           background: "#fff",
@@ -18,7 +18,7 @@ const PostComments = () => {
         }}
       >
         <h3
-          className="mb-2 ps-2 mt-1"
+          className="mt-1 mb-2 ps-2"
           style={{
             color: "#214E8A",
             fontFamily: "Rubik",
@@ -34,6 +34,7 @@ const PostComments = () => {
         <Temp />
         <Temp />
         <Temp />
+       
       </Container>
     </>
   );

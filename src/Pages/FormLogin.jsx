@@ -15,7 +15,7 @@ import { LoginOrNotFun } from "../redux/actions/appAction";
 const FormLogin = () => {
   const nav = useNavigate();
   const dispatch = useDispatch();
-  const [loginForm, setLoginForm] = useState(true);
+  const [loginForm, setLoginForm] = useState(false);
   // const [login]
   const LoginSubmitHandler = async (event) => {
     event.preventDefault();
@@ -247,16 +247,16 @@ const FormLogin = () => {
         <motion.div
           className="signIn w-100 d-flex justify-content-center"
           initial={{ y: loginForm ? `0` : `0` }}
-          animate={{ y: loginForm ? `0` : `-57%` }}
+          animate={{ y: loginForm ? `0` : `-60%` }}
           transition={{
             duration: 1,
           }}>
           <div
             className="overlay"
-            style={{ opacity: "0.2", borderRadius: "65% 65% 0% 0%" }}></div>
+            style={{ opacity: "0.2", borderRadius: "0% 0% 0% 0%" }}></div>
           <div className="container d-flex flex-column justify-content-center align-items-center animation sign-in-main pt-4">
             <h2
-              className={`text-white fw-bold mb-3 p-3 col-3 text-center ${
+              className={`text-white fw-bold mb-3 p-3 col-4 text-center ${
                 loginForm ? `fs-3` : `fs-1`
               }
               ${loginForm ? `pb-4` : `pb-0`} `}
@@ -265,7 +265,7 @@ const FormLogin = () => {
               Sign In
             </h2>
             <motion.div
-              className="col-3"
+              className="w-[80%] md:w-[50%]"
               initial={{ opacity: loginForm ? `0` : `0` }}
               animate={{ opacity: loginForm ? `0` : `1` }}
               transition={{

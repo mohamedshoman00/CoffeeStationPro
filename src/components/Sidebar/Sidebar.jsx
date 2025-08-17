@@ -58,6 +58,16 @@ const Sidebar = ({ showNoti, setShowNoti }) => {
                 <i className="fa-solid fa-users"></i>
               </NavLink>
             </li>
+            <li>
+              <NavLink to="/about-us">
+                <i className="fa-solid fa-users"></i>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact-us">
+                <i className="fa-solid fa-users"></i>
+              </NavLink>
+            </li>
           </ul>
         </div>
         <div className="end">

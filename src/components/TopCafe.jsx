@@ -7,8 +7,8 @@ const TopCafe = ({ data, title }) => {
     <div className="col-10 col-lg-10">
       {/* Start top-cafe  */}
       <div className="top-cafe" id="top-cafe">
-        <h2 className="main-title d-flex justify-content-between col-12 col-lg-12">
-          Top {title} In Ismailia
+        <h2 className="main-title gap-5 d-flex justify-content-between items-center col-12 col-lg-12 text-2xl md:text-4xl">
+          Top {title} In Ismalia
           {location.pathname === `/home` ? (
             <NavLink
               to={
@@ -18,7 +18,7 @@ const TopCafe = ({ data, title }) => {
                   ? `/all-restaurants`
                   : ``
               }
-              className="view-all-btn"
+              className="view-all-btn w-40 h-16"
             >
               View All
             </NavLink>

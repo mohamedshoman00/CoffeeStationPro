@@ -12,7 +12,7 @@ const MainHome = () => {
   return (
     <Container
       fluid
-      className="p-0 w-100 home-page"
+      className="p-0 w-100 home-page h-dvh overflow-hidden"
       style={{
         // height: "100vh",
         backgroundImage: `url(${HomeBackground})`,
@@ -24,27 +24,23 @@ const MainHome = () => {
       <div className="second-overlay"></div>
       {showNoti && <Notifications />}
       <HomeNavbar />
-      <Sidebar showNoti={showNoti} setShowNoti={setShowNoti} />
-      <div className="home" style={{ height: "100%" }}>
+      {/* <Sidebar showNoti={showNoti} setShowNoti={setShowNoti} /> */}
+      <div className="flex flex-col lg:pl-40 gap-y-20 md:gap-0 home" style={{ height: "100%" }}>
         <div
-          className="side1 d-flex gap-3"
-          style={{ marginLeft: `220px`, marginTop: `-25px` }}>
-          <div className="card1">
-            <div>
-              <h2>
+          className="gap-3 mx-6 mt-6 side1 d-flex md:gap-8 lg:gap-52"
+          >
+          <div className="w-full card1 md:w-1/2 lg:w-1/3">
+            <div className="gap-5 justify-evenly md:justify-start">
+              <h2 className="text-5xl md:text-5xl">
                 <span>Hi</span> Mahmoud
               </h2>
               <img src={handCheck} alt="" />
             </div>
-            <p className="card1-p">
-              "<span>Welcome to our website</span>, where Egypt comes alive
-              <br />
-              Explore the beauty of our country, rich in history and thrive
-              <br />
-              Discover hidden gems
+            <p className="w-full text-lg card1-p lg:text-2xl">
+              <span>Welcome to our website</span> — experience the beauty, history, and hidden gems of Egypt
             </p>
           </div>
-          <div className="card2">
+          <div className="hidden card2 md:block ">
             <div>
               <h2>Fantastic cafes</h2>
             </div>
@@ -60,16 +56,15 @@ const MainHome = () => {
           </div>
         </div>
         <div
-          className="side2 d-flex"
-          style={{ marginLeft: `220px`, marginTop: `-50px` }}>
-          <div className="card3">
-            <h3>
-              Find The <br /> Best <span>cafe</span> <br /> and
-              <span> restaurants</span> now
+          className="flex flex-col w-full px-6 pt-6 side2 md:flex-row md:justify-start "
+         >
+          <div className="w-fit card3 md:w-1/2">
+            <h3 className="text-[43px] md:text-4xl lg:text-6xl">
+              Explore the best <br /><span>cafés</span> & <span>restaurants</span><br/>today
             </h3>
           </div>
           <div
-            className="card5"
+            className="w-full card5 md:w-1/2 lg:w-1/3 md:mt-0 md:h-[250px] lg:h-[230px]"
             style={{
               backgroundImage: `url(${cardBg})`,
               backgroundSize: "cover",
@@ -81,7 +76,7 @@ const MainHome = () => {
           </div>
         </div>
 
-        <div className="card4">
+        {/* <div className="card4">
           <h4>One percentage cafe</h4>
           <p>
             The cafe has a cozy and inviting atmosphere with warm lighting,
@@ -92,7 +87,7 @@ const MainHome = () => {
           <NavLink className="card4-btn">
             <i className="fa-solid fa-right-long"></i>
           </NavLink>
-        </div>
+        </div> */}
       </div>
     </Container>
   );
