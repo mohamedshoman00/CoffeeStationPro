@@ -245,7 +245,7 @@ const FormLogin = () => {
         </div>
 
         <motion.div
-          className="signIn w-100 d-flex justify-content-center"
+          className="signIn w-100 d-flex justify-content-center md:rounded-[65%_65%_0_0]"
           initial={{ y: loginForm ? `0` : `0` }}
           animate={{ y: loginForm ? `0` : `-60%` }}
           transition={{
@@ -254,7 +254,7 @@ const FormLogin = () => {
           <div
             className="overlay md:rounded-[65%_65%_0_0]" 
             style={{ opacity: "0.2", borderRadius: "0% 0% 0% 0%" }}></div>
-          <div className="container d-flex flex-column justify-content-center align-items-center animation sign-in-main pt-4 md:rounded-[65%_65%_0_0]">
+          <div className="container d-flex flex-column justify-content-center align-items-center animation sign-in-main pt-4 ">
             <h2
               className={`text-white fw-bold mb-3 p-3 col-4 text-center ${
                 loginForm ? `fs-3` : `fs-1`
