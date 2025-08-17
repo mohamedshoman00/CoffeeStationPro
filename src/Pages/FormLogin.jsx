@@ -247,7 +247,7 @@ const FormLogin = () => {
         <motion.div
           className="signIn w-100 d-flex justify-content-center md:rounded-[65%_65%_0_0]"
           initial={{ y: loginForm ? `0` : `0` }}
-          animate={{ y: loginForm ? `0` : `-60%` }}
+          animate={{ y: loginForm ? `0` : `-50%` }}
           transition={{
             duration: 1,
           }}>
