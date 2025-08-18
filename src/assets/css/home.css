@@ -505,7 +505,7 @@
 .container .main-title::before {
   content: '';
   position: absolute;
-  width: 100%;
+  width: 90%;
   height: 2px;
   background: #000;
   bottom: -20px;

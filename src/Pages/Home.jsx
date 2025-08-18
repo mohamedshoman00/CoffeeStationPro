@@ -268,8 +268,8 @@ const Home = () => {
         <Events data={EventData} />
         {/* ُEnd Event */}
         {/* start world */}
-        <div className="container w-full max-w-screen-lg">
-          <h1 className="main-title">
+        <div className="container pe-0 w-[95%] max-w-screen-lg ">
+          <h1 className="main-title text-[24px] md:text-[30px]">
             Global coverage in over 200 cafe, resturants and other places in
             Ismalia
           </h1>
