@@ -59,7 +59,7 @@ const MainHome = () => {
           className="flex flex-col w-full px-6 pt-6 side2 md:flex-row md:justify-start "
          >
           <div className="w-fit card3 md:w-1/2">
-            <h3 className="text-[40px] md:text-4xl lg:text-6xl">
+            <h3 className="text-[34px] md:text-4xl lg:text-6xl">
               Explore the best <br /><span>cafés</span> & <span>restaurants</span><br/>today
             </h3>
           </div>
