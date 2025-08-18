@@ -25,9 +25,9 @@ const MainHome = () => {
       {showNoti && <Notifications />}
       <HomeNavbar />
       {/* <Sidebar showNoti={showNoti} setShowNoti={setShowNoti} /> */}
-      <div className="flex flex-col lg:pl-40 gap-y-20 md:gap-0 home" style={{ height: "100%" }}>
+      <div className="flex flex-col lg:pl-40 gap-y-4  md:gap-0 home" style={{ height: "100%" }}>
         <div
-          className="gap-3 mx-6 mt-6 side1 d-flex md:gap-8 lg:gap-52"
+          className="gap-3 mx-6  mt-0 md:mt-6 side1 d-flex md:gap-8 lg:gap-52"
           >
           <div className="w-full card1 md:w-1/2 lg:w-1/3">
             <div className="gap-5 justify-evenly md:justify-start">
@@ -59,12 +59,12 @@ const MainHome = () => {
           className="flex flex-col w-full px-6 pt-6 side2 md:flex-row md:justify-start "
          >
           <div className="w-fit card3 md:w-1/2">
-            <h3 className="text-[43px] md:text-4xl lg:text-6xl">
+            <h3 className="text-[40px] md:text-4xl lg:text-6xl">
               Explore the best <br /><span>cafés</span> & <span>restaurants</span><br/>today
             </h3>
           </div>
           <div
-            className="w-full card5 md:w-1/2 lg:w-1/3 md:mt-0 md:h-[250px] lg:h-[230px]"
+            className="w-full mt-5  card5 md:w-1/2 lg:w-1/3  md:h-[250px] lg:h-[230px]"
             style={{
               backgroundImage: `url(${cardBg})`,
               backgroundSize: "cover",
