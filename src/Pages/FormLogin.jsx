@@ -251,9 +251,9 @@ const FormLogin = () => {
           transition={{
             duration: 1,
           }}>
-          <div
+          {/* <div
             className="overlay md:rounded-[65%_65%_0_0]" 
-            style={{ opacity: "0.2", borderRadius: "0% 0% 0% 0%" }}></div>
+            style={{ opacity: "0.2", borderRadius: "0% 0% 0% 0%" }}></div> */}
           <div className="container d-flex flex-column justify-content-center align-items-center animation sign-in-main pt-4 ">
             <h2
               className={`text-white fw-bold mb-3 p-3 col-4 text-center ${
@@ -265,12 +265,12 @@ const FormLogin = () => {
               Sign In
             </h2>
             <motion.div
-              className="w-[80%] md:w-[50%]"
+              className="w-[80%] md:w-[30%]"
               initial={{ opacity: loginForm ? `0` : `0` }}
               animate={{ opacity: loginForm ? `0` : `1` }}
               transition={{
-                duration: 2,
-                delay: 0.1,
+                duration: 0,
+                delay: 0,
               }}>
               <div className="">
                 <form onSubmit={LoginSubmitHandler}>
